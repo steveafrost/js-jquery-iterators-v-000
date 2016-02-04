@@ -57,7 +57,7 @@ $('div').each(function(index, div){
 });
 ```
 
-The `.each` function accepts an anonymous function as an parameter. The anonymous function accepts two parameters, a variable to represent the index of the array and a variable to represent each individual jQuery object in the array. Once inside the body of the anonymous function, `this` represents the element of the array.
+The `.each` function accepts a function as an parameter. The function accepts two parameters, a variable to represent the index of the array and a variable to represent each individual jQuery object in the array. Once inside the body of the  function, `this` represents the element of the array.
 
 
 ## `$.map`
