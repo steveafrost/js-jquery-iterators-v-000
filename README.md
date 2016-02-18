@@ -3,14 +3,14 @@
 ## Objectives
 + use `$.each` to iterate over a collection of objects
 + use `.each` to iterate over jQuery objects
-+ use `$.map` to iterate over jQuery objects
-+ use `.map` to iterate over a collection of objects
++ use `$.map` to iterate over a collection of objects
++ use `.map` to iterate over jQuery objects
 
 ## Intro
 
 Just like Ruby and JavaScript had iterators, jQuery does too. These iterators work in much the same way as all other iterators, and let us manipulate the dom. Feel free to copy and paste the examples below into `index.html` and `script.js` to try them out!
 
-## `$.Each`
+## `$.each`
 
 Let's say we have an array of names, and we want to iterate over them to say hello:
 
