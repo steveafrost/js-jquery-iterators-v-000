@@ -74,7 +74,6 @@ Using `$.map`, we can iterate over the names to add their programming language o
 
 ```js
 $.map(names, function(name, index){
-debugger;
    return name + " loves JavaScript"; 
 });
 ```
@@ -108,3 +107,5 @@ We defined a function `listIterate`. The body of the function calls `.map` on `$
 
 ## Resources
 + [jQuery Docs](https://github.com/learn-co-curriculum/js-jquery-iterators)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-iterators'>jQuery Iterators</a> on Learn.co and start learning to code for free.</p>
