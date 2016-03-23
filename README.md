@@ -106,6 +106,6 @@ function listIterate(){
 We defined a function `listIterate`. The body of the function calls `.map` on `$("li")` which returns an array of jQuery objects representing all the list items. The important thing to note is that we have `return` in this method twice. The first `return` sets the new array as the return value of the `listIterate` function. The second `return` tells `.map` to add the text of the list item to the new array and move on to the next element in the array.
 
 ## Resources
-+ [jQuery Docs](https://github.com/learn-co-curriculum/js-jquery-iterators)
++ [jQuery Docs](https://api.jquery.com/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-iterators'>jQuery Iterators</a> on Learn.co and start learning to code for free.</p>
