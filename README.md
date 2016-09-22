@@ -8,17 +8,17 @@
 
 ## Intro
 
-Just like Ruby and JavaScript had iterators, jQuery does too. These iterators work in much the same way as all other iterators, and let us manipulate the dom. Feel free to copy and paste the examples below into `index.html` and `script.js` to try them out!
+Just like Ruby and JavaScript, jQuery also has iterators. They work in much the same way as the iterators we've already studied, but jQuery's let us manipulate the DOM. Feel free to copy and paste the examples below into `index.html` and `script.js` to try them out!
 
 ## `$.each`
 
 Let's say we have an array of names, and we want to iterate over them to say hello:
 
 ```js
-var names = ["Carleton", "Avi", "Azat", "Ann" ]
+var names = ["Carleton", "Avi", "Azat", "Ann"]
 ```
 
-jQuery has a built in iterator that let's us iterate over **plain JavaScript arrays**:
+jQuery has a built in iterator that lets us iterate over **plain JavaScript arrays**:
 
 ```js
 $.each(names, function(index, name){
@@ -26,18 +26,18 @@ $.each(names, function(index, name){
 });
 ```
 
-`$.each` accepts two parameters, the array to iterate over, and a function that contains the actions to be taken with each item in the array. This anonymous function accepts two parameters: the index of the array, and a variable placeholder to represent each item individually.
+`$.each` accepts two parameters, the array to iterate over and a function that contains the actions to be taken with each item in the array. This anonymous function accepts two parameters: the index of the array and a variable placeholder to represent each item individually.
 
 The first time iterating over the `names` array, `index` is storing 0 and `name` is storing `"Carleton"`.
 
 ## `.each`
 
-`.each` is only different from `$.each` because it works on a collection of jQuery objects, not just a plain JavaScript array.
+`.each` is only different from `$.each` because it works on a collection of jQuery objects instead of a plain JavaScript array.
 
 Let's say we have three divs on a page, and we want to print the div number inside each div using jQuery.
 
 HTML:
-```
+```html
 <div>
 </div>
 <div>
@@ -67,7 +67,7 @@ Just like `$.each`, `$.map` only works on plain JavaScript arrays. Just like in 
 Let's take our first example of an array of names:
 
 ```js
-var names = ["Carleton", "Avi", "Azat", "Ann" ];
+var names = ["Carleton", "Avi", "Azat", "Ann"];
 ```
 
 Using `$.map`, we can iterate over the names to add their programming language of choice:
@@ -78,11 +78,11 @@ $.map(names, function(name, index){
 });
 ```
 
-You'll notice the order of the parameters in the anonymous functions are reversed.This is done to match the order of parameters in the plain JavaScript `map` function.
+You'll notice the order of the parameters in the anonymous functions are reversed. This is done to match the order of parameters in the plain JavaScript `map` function.
 
 ## `.map`
 
-Let's say we have a list on a page, and we want to get all the text from the list to manipulate them:
+Let's say we have a list on a page, and we want to grab all the text snippets from the list to manipulate them:
 
 ```html
 <ol>
@@ -93,7 +93,7 @@ Let's say we have a list on a page, and we want to get all the text from the lis
 </ol>
 ```
 
-We can use `.map` to iterate over the lists and return an array of the text:
+We can use `.map` to iterate over the list and return an array of the text:
 
 ```js
 function listIterate(){
@@ -103,7 +103,7 @@ function listIterate(){
 }
 ``` 
 
-We defined a function `listIterate`. The body of the function calls `.map` on `$("li")` which returns an array of jQuery objects representing all the list items. The important thing to note is that we have `return` in this method twice. The first `return` sets the new array as the return value of the `listIterate` function. The second `return` tells `.map` to add the text of the list item to the new array and move on to the next element in the array.
+We defined a `listIterate` function. The body of the function calls `.map` on `$("li")`, which returns an array of jQuery objects representing all the list items. The important thing to note is that we have `return` in this method twice. The first `return` sets the new array as the return value of the `listIterate` function. The second `return` tells `.map` to add the text of the list item to the new array and move on to the next element in the array.
 
 ## Resources
 + [jQuery Docs](https://api.jquery.com/)
